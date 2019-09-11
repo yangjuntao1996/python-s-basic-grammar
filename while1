@@ -1,0 +1,53 @@
+'''
+pets = ['dog','cat','rabbit','cat','dog','fish','cat','fish']
+while 'cat' in pets:
+	pets.remove('cat')
+print(pets)
+'''
+'''
+responses = {}
+active = True
+while active:
+	name = input("输入你的名字")
+	message = input("输入你的回答")
+	responses[name] = message
+	
+	repeat = input("还有人要填写吗？")
+	if repeat == "no":
+		active = False
+
+print("调查结果如下:")
+for name,message in responses.items():
+	print(name.title() + ":" + message)
+print(responses)
+'''
+'''
+#7-8
+sandwich_orders = ['a','b','c','d','e']
+finished_sandwiches = []
+while sandwich_orders:
+	sandwich = sandwich_orders.pop()
+	print("I made your " + sandwich)
+	finished_sandwiches.append(sandwich)
+for finished_sandwich in finished_sandwiches:
+	print(finished_sandwich)
+'''
+'''
+print("pastrami had sold out")
+sandwich_orders = ['a','b','pastrami','c','d','pastrami','e','pastrami']
+while "pastrami" in sandwich_orders:
+	sandwich_orders.remove('pastrami')
+print(sandwich_orders)
+'''
+favorite_places = {}
+active = True
+while active:
+	name = input("你的姓名是什么？" )
+	place = input("你的梦想旅游胜地是哪里？")
+	favorite_places[name] = place
+	
+	ask = input("还有人回答吗？")
+	if ask.lower() == "no":
+		active = False
+for name in favorite_places.keys():
+	print(name.title() + "梦想中的旅游胜地是" + place.title())

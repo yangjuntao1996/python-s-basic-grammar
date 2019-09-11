@@ -1,0 +1,101 @@
+'''
+#7-1
+car = input("请问您需要什么牌子的汽车呢？")
+print("Let me see if i can find you a " + car.title())
+'''
+'''
+#7-2
+number = input("请问有多少人订餐？")
+number = int(number)
+if number >8:
+	print("没有空桌了")
+else:
+	print("还有位置")
+'''
+'''
+#7-3
+number = input("请输入一个数字")
+number = int(number)
+if number%10 == 0:
+	print(str(number) + "是10的倍数")
+else:
+	print("不是10的倍数")
+'''
+'''
+#7-4
+active = True
+pizzas = []
+while active:
+	pizza = input("请选择配料")
+
+	if pizza == "quit":
+		active = False
+	else:
+		pizzas.append(pizza)
+		print("选择了 " + str(pizzas) + " 配料")
+'''
+'''
+#7-5
+while true:
+	age = input("请问你的年龄是多少？")
+	age = int(age)
+	if age < 3:
+		print("免费")
+	elif 3 <= age <12:
+		print("票价为10美元")
+	else:
+		print("票价为15美元")
+'''
+'''
+#7-6-1
+message = ""
+while message != "quit":
+	message = input("请问你的年龄是多少？")
+	message = int(message)
+	if message < 3:
+		print("免费")
+	elif 3 <= message < 12:
+		print("票价为10美元")
+	elif 12 <= message <= 100:
+		print("票价为15美元")
+	else:
+		message = "quit"
+'''
+'''
+7-6-2
+active = True
+while active:
+	age = input("请问你的年龄是多少？")
+	age = int(age)
+	if age < 3:
+		print("免费")
+	elif 3 <= age <12:
+		print("票价为10美元")
+	elif 12 <= message <= 100:
+		print("票价为15美元")
+	else:
+		active = False
+'''
+'''
+#7-6-3
+active = True
+while active:
+	age = input("请问你的年龄是多少？")
+	if age == "quit":
+		break
+	else:
+		age = int(age)
+		if age < 3:
+			print("免费")
+		elif 3 <= age <12:
+			print("票价为10美元")
+		else:
+			print("票价为15美元")
+'''
+#7-7
+a = 0
+while True:
+	a+=1
+	print(a)
+		
+	

@@ -1,0 +1,49 @@
+'''
+messages = {'first_name':'yang','last_name':'juntao','age':23,'city':'dongguan'}
+print(messages['first_name'].title())
+print(messages['last_name'].title())
+print(messages['age'])
+print(messages['city'].title())
+'''
+'''
+numbers = {'a':1,'b':2,'c':3,'d':4,'e':5}
+print('a,你喜欢的数字是' + str(numbers['a']) + '吗。')
+print('b,你喜欢的数字是' + str(numbers['b']) + '吗。')
+print('c,你喜欢的数字是' + str(numbers['c']) + '吗。')
+print('d,你喜欢的数字是' + str(numbers['d']) + '吗。')
+print('e,你喜欢的数字是' + str(numbers['e']) + '吗。')
+'''
+'''
+word = {
+	'print':'打印到终点',
+	'sort':'按顺序永久排序',
+	'reverse()':'临时改变列表顺序',
+	'if':'条件判断',
+	'for':'循环'
+	}
+for k,v in word.items():
+	print("\nk:" + k)
+	print("v:" + v)
+'''
+'''
+messages = {'nile':'egypt','nile1':'egypt1','nile2':'egypt2'}
+for k,v in messages.items():
+	print("The " + k.title() + " runs through " + v.title() + ".")
+	print(k.title())
+	print(v.title())
+'''
+
+favorite_languages = {
+	'jen':'python',
+	'sarah':'c',
+	'edward':'ruby',
+	'phil':'python',
+	}
+friends = ['jen','teddy']
+for name in favorite_languages.keys():
+	print(name.title())
+	if name in friends:
+		print("欢迎参加")
+	else:
+		print("邀请参加")
+	

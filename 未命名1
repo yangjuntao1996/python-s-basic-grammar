@@ -1,0 +1,5 @@
+import cv2 as cv
+img = cv.imread('/home/yangjuntao/Desktop/下载.jpeg',1)
+cv.imshow("110",img)
+
+

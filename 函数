@@ -1,0 +1,95 @@
+'''
+def function(username):
+	print("Hello," + username.title())
+	return None
+while True:
+	username = input("请输入你的名字")	
+	function(username)
+	
+'''
+'''
+#8-1
+def display_message():
+	print("我在这章学习了函数")
+	return None
+display_message()
+
+
+#8-2
+def favorite_book(title):
+	print("One of my favorite books is " + title.title())
+	
+favorite_book('yes')
+'''
+'''
+#8-3
+
+def make_shirt(size,style):
+	print("T恤的尺码是：" + size.title())
+	print("字样是："  + style)
+	
+make_shirt("large","Hello world")
+
+
+#8-4
+
+def make_shirt(size='large',style="I love python"):
+	print("T恤的尺码是：" + size.title())
+	print("字样是："  + style)
+	
+make_shirt()
+make_shirt(size="medium")
+make_shirt(style="我爱python")
+
+#8-5
+def describe_city(city,country="china"):
+	print(city.title() + " is in " + country.title())
+	
+describe_city("hongkong")
+describe_city("beijing")
+describe_city("newyork",country="america")
+'''
+'''
+#8-6
+def city_country(city,country):
+	message = '"' + city.title() + "," + country.title() + '"'
+	return message
+	
+asf = city_country('beijing','china')
+print(asf)
+asf1 = city_country('beijing','china')
+print(asf1)
+asf2 = city_country('beijing','china')
+print(asf2)
+'''
+'''
+#8-7
+def make_album(name,album_name,amount=""):
+	if amount:
+		music = {"name":name,"album":album_name,"number":amount}
+	else:
+		music = {"name":name,"album":album_name}
+	return music
+	
+music_name = make_album('a','b',amount=12)
+print(music_name)
+music_name = make_album('a1','b1')
+print(music_name)
+music_name = make_album('a2','b2')
+print(music_name)
+'''
+def make_album():
+	while True:
+		print("输入q结束")
+		print("请输入专辑信息：")
+		name = input("请输入歌手名字")
+		if name =='q':
+			break
+		album_name = input("请输入专辑名字")
+		if album_name == 'q':
+			break
+		message = {"name":name,"album_name":album_name}
+		print(message)
+	
+make_album()
+

@@ -1,0 +1,32 @@
+'''
+messages = {'first_name':'yang','last_name':'juntao','age':23,'city':'dongguan'}
+print(messages['first_name'].title())
+print(messages['last_name'].title())
+print(messages['age'])
+print(messages['city'].title())
+'''
+'''
+numbers = {'a':1,'b':2,'c':3,'d':4,'e':5}
+print('a,你喜欢的数字是' + str(numbers['a']) + '吗。')
+print('b,你喜欢的数字是' + str(numbers['b']) + '吗。')
+print('c,你喜欢的数字是' + str(numbers['c']) + '吗。')
+print('d,你喜欢的数字是' + str(numbers['d']) + '吗。')
+print('e,你喜欢的数字是' + str(numbers['e']) + '吗。')
+'''
+
+words = {
+	'print':'打印到终点',
+	'sort':'按顺序永久排序',
+	'reverse()':'临时改变列表顺序',
+	'if':'条件判断',
+	'for':'循环',
+	'for1':'循环',
+	'for2':'循环',
+	'for3':'循环',
+	'for4':'循环',
+	}
+for k,v in words.items():
+	print("\nkeys:" + k)
+	print("values:" + v)
+	
+	

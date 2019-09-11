@@ -1,0 +1,142 @@
+'''
+aliens = []
+for aliens_number in range(30):
+	new_alien = {'color':'green','points':'5'}
+	aliens.append(new_alien)
+
+for alien in aliens[0:5]:
+
+	print(alien)		
+'''
+'''
+favorite_languages = {
+	'jen':['python','ruby'],
+	'sarah':'c',
+	'edward':['ruby','go'],
+	'phil':['python','haskell'],
+	}
+for name,languages in favorite_languages.items():
+	if len(languages) == 1:
+		print("\n" + name.title() + "'s favorite's language is " + languages.title())
+	else:
+		print("\n" + name.title() + "'s favorite's languages are:")
+		for language in languages: 	
+			print("\t" + language.title())
+'''
+'''
+#6-7
+people_1 = {
+	'first_name':'yang',
+	'last_name':'juntao',
+	'age':'23',
+	'city':'dongguan',
+	}	
+people_2 = {
+	'first_name':'duan',
+	'last_name':'shaowei',
+	'age':'23',
+	'city':'dongguan',
+	}	
+people_3 = {
+	'first_name':'zheng',
+	'last_name':'xu',
+	'age':'23',
+	'city':'dongguan',
+	}	
+people = [people_1,people_2,people_3]
+for person in people:
+	print(person)
+'''
+'''
+a = {
+	'type':'cat',
+	'owner':'teddy',
+	}
+b = {
+	'type':'fish',
+	'owner':'teddy1',
+	}
+c = {
+	'type':'dog',
+	'owner':'teddy2',
+	}
+pets = [a,b,c]
+for pet in pets:
+	print(pet)
+'''
+'''
+favorite_places = {
+	'teddy':['beijing','shanghai','xinjiang'],
+	'teddy1':['beijing1','shanghai1','xinjiang1'],
+	'teddy2':['beijing2','shanghai2','xinjiang2'],
+	}
+for name,places in favorite_places.items():
+	print(name.title() + "'s favorite's place are:")
+	for place in places:
+		print("\t" + place.title())
+'''
+'''
+favorite_numbers = {
+	'a':[1],
+	'b':[2,4,6,0],
+	'c':[3,6,9],
+	'd':[4,6],
+	'e':[5,7,3],
+	}
+for name,numbers in favorite_numbers.items():
+	print(name.title() + "'s favorite's number are:")
+	for number in numbers:
+		print("                 \t\t\t "+str(number))
+'''
+'''
+cities = {
+	'shanghai':{
+		'country':'china',
+		'population':'ten millon',
+		'fact':'有钱',
+		},
+		
+	'beijing':{
+		'country':'china',
+		'population':'ten millon',
+		'fact':'政治中心',
+		},
+		
+	'广州':{
+		'country':'china',
+		'population':'ten millon',
+		'fact':'珠三角',
+		}
+	}
+
+for city,city_info in cities.items():
+	print(city + "的国家是" + city_info['country'] +
+	"，人口面积有" + city_info['population'] + ",真实事件是" +
+	city_info['fact'])
+'''
+
+cities = {
+	'shanghai':{
+		'country':'china',
+		'population':'ten millon',
+		'fact':'有钱',
+		},
+		
+	'beijing':{
+		'country':'china',
+		'population':'ten millon',
+		'fact':'政治中心',
+		},
+		
+	'广州':{
+		'country':'china',
+		'population':'ten millon',
+		'fact':'珠三角',
+		}
+	}
+
+for city,city_info in cities.items():
+	print("City:" + city)
+	print("\tCountry:" + city_info['country'])
+	print("\tPopulation:" + city_info['population'])
+	print("\tFact:" + city_info['fact']) 

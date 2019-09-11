@@ -1,0 +1,34 @@
+#3-4
+invite = ['teddy','john','mark']
+print("希望" + invite[0].title() + "来共进晚餐。" + "\n希望" + invite[1].title() + "来共进晚餐。" + "\n希望" + invite[2].title() + "来共进晚餐。")
+
+#3-5
+one = "john"
+print("\n" + one.title() + "无法共进晚餐")
+
+invite[1] = 'kill'
+print("\n希望" + invite[0].title() + "来共进晚餐。" + "\n希望" + invite[1].title() + "来共进晚餐。" + "\n希望" + invite[2].title() + "来共进晚餐。")
+
+#3-6
+print("\n我找到了一个更大的餐桌")
+invite.insert(0,'a')
+invite.insert(2,'b')
+invite.append("c")
+print('\n希望' + invite[0] + ',' + invite[1] +  invite[2] + ',' + invite[3] + ',' + invite[4] + ',' + invite[5] +',' +'来共进晚餐')
+
+#3-7
+print("新预定的桌子无法及时送达，所以只能邀请两个人")
+a = invite.pop(0)
+print('\n非常抱歉' + a + '无法共进晚餐')
+b = invite.pop(0)
+print('非常抱歉' + b + '无法共进晚餐')
+c = invite.pop(0)
+print('非常抱歉' + c + '无法共进晚餐')
+d = invite.pop(0)
+print('非常抱歉' + d + '无法共进晚餐')
+print('\n' + invite[0] + '您还可以参加晚餐')
+print(invite[1] + '您还可以参加晚餐')
+
+del invite[0]
+del invite[0]
+print(invite)
